@@ -77,6 +77,7 @@ public class ProductController {
 //		BaseResponse<Iterable<Product>> baseResponse=new BaseResponse<Iterable<Product>>(200, date, "Product is Filter", productbyname);
 //		ResponseEntity<BaseResponse<Iterable<Product>>> responseEntity=new ResponseEntity<BaseResponse<Iterable<Product>>>(baseResponse, HttpStatus.OK);
 //		
+		System.out.println("project to be Filter");
 		Product product=productService.findByProductName(productname);
 		BaseResponse<Product> baseResponse=new BaseResponse<Product>(200, date, "Product Filter", product);
 		ResponseEntity<BaseResponse<Product>> responseEntity=new ResponseEntity<BaseResponse<Product>>(baseResponse, HttpStatus.OK);
